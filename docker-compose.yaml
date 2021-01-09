@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tomcat-sample:
+    build: .
+    image: tomcat-sample
+    ports:
+      - 8888:8080
+    volumes: 
+      - ./webapps:/usr/local/tomcat/webapps
